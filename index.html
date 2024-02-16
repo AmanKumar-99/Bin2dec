@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Bin2Dec</title>
+  </head>
+  <body>
+    <div class="main">
+      <form>
+        <label class="binary-title" for="binary-digit">
+          <h1>Enter binary Digit (upto 8 characters)</h1>
+        </label>
+        <input
+          type="number"
+          placeholder="Enter binary Digit"
+          id="binary-digit"
+          name="binary-digit"
+          onkeypress="return checkBinaryDigit(event)"
+        />
+        <button id="confirm-btn">Confirm</button>
+      </form>
+      <h1 class="decimal-msg" onclick="return onclickButton()"></h1>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
